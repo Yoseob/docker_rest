@@ -1,0 +1,13 @@
+env:
+  global:
+    - DOCKER_USER=iosid
+    - DOCKER_PASS=dldytjq89!
+
+
+deploy:
+  provider: script
+  script: bash docker-deploy.sh
+  skip_cleanup: true
+  on:
+    repo: iosid/test_build
+    tags: true
