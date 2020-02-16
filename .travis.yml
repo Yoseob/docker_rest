@@ -1,3 +1,5 @@
+language: java
+
 env:
   global:
     - DOCKER_USER=iosid
