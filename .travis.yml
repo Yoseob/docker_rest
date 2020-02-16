@@ -1,0 +1,12 @@
+language: java
+branches:
+  only:
+    - master
+env:
+  global:
+    - DOCKER_USER=iosid
+    - DOCKER_PASS=pw
+deploy:
+  provider: script
+  script: bash docker-deploy.sh
+  skip_cleanup: true
